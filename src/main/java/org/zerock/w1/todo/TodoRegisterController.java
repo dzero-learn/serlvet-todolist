@@ -13,8 +13,6 @@ public class TodoRegisterController extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("등록 화면");
-		
 		req.getRequestDispatcher("/WEB-INF/todo/register.jsp").forward(req, resp);
 	}
 
